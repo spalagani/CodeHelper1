@@ -845,7 +845,7 @@ SyntaxHighlighter.all();
     <div style='margin:0px auto;width:960px'> 
     <!-- Logo Start here -->
     <div style='float:left;width: 400px; padding:10px;'><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-<b:widget id='Header1' locked='true' title='HTML5 Interview Questions (Header)' type='Header'>
+<b:widget id='Header1' locked='true' title='CodeHelper (Header)' type='Header'>
 <b:includable id='title'>
 <a expr:href='data:blog.homepageUrl'><data:title/></a>
 </b:includable>
@@ -953,6 +953,7 @@ google_ad_height = 15;
 <div style='clear:both;'/>
 
 <div class='span-24'>
+
 <div class='menu-secondary-container'>
 <ul class='menus menu-secondary'>
 								<li><a expr:href='data:blog.homepageUrl'>Home</a></li>
@@ -970,13 +971,13 @@ google_ad_height = 15;
 								<li><a href='http://codehelper4all.blogspot.in/search/label/Tools'>Tools</a></li>
 								<li><a href='#'>Interview Questions</a>
 								<ul class='children'>
-									<li><a href='http://html5.codehelper.in' target="_blank">HTML</a></li>
-									<li><a href='http://css3.codehelper.in' target="_blank">CSS</a></li>
-									<li><a href='http://jquery.codehelper.in' target="_blank">JavaScript</a></li>
-									<li><a href='http://jquery.codehelper.in' target="_blank">JQuery</a></li>
+									<li><a href='http://html5.codehelper.in' target='_blank'>HTML</a></li>
+									<li><a href='http://css3.codehelper.in' target='_blank'>CSS</a></li>
+									<li><a href='http://jquery.codehelper.in' target='_blank'>JavaScript</a></li>
+									<li><a href='http://jquery.codehelper.in' target='_blank'>JQuery</a></li>
 								</ul>
 								</li>
-								<li><a href='http://codehelper4all.blogspot.in/search/label/ebooks' alt="Web Development eBooks">Web Development Books</a></li>
+								<li><a alt='Web Development eBooks' href='http://codehelper4all.blogspot.in/search/label/ebooks'>Web Development Books</a></li>
 							</ul>
 </div>
 
@@ -1019,13 +1020,13 @@ google_ad_height = 90;
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <span id='blog-pager-newer-link'>
-      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>Previous Interview Question</a>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>Previous WebDevelopment Post</a>
       </span>
     </b:if>
 
     <b:if cond='data:olderPageUrl'>
       <span id='blog-pager-older-link'>
-      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>Next Interview Question</a>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>Next WebDevelopment Post</a>
       </span>
     </b:if>
 
