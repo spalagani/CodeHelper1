@@ -214,7 +214,7 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
 .main .widget{margin:0 0 5px;padding:0 0 2px}
 .main .Blog{border-bottom-width:0}
 /* FOOTER ----------------------------------------------- */
-#footer{margin-bottom:15px;padding:10px 0;height:30px;overflow:hidden; background-color:#31b6e9;border-top:4px solid #ADE7FF;}
+#footer{margin-bottom:15px;padding:10px 0;height:30px;overflow:hidden; background-color:#33363b;border-top:4px solid #ADE7FF;}
 #copyrights{color:#FFF;float:left;padding-left:15px;text-shadow:0px 1px 0px #000;width:440px;height:30px;overflow:hidden;}
 #copyrights a{color:#FFF}
 #copyrights a:hover{color:#FFF;text-decoration:none}
@@ -724,8 +724,8 @@ pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;l
 .menu-secondary ul{min-width:160px}
 .menu-secondary li a{color:#0C7EC0;text-shadow:0px 1px 0px #fff;padding:12px 15px 9px 15px;text-decoration:none;text-transform:uppercase;font:bold 12px Arial,Helvetica,Sans-serif;text-shadow:0 1px 0 #FFF}
 .menu-secondary li a:hover,.menu-secondary li a:active,.menu-secondary li a:focus,.menu-secondary li:hover &gt; a,.menu-secondary li.current-cat &gt; a,.menu-secondary li.current_page_item &gt; a,.menu-secondary li.current-menu-item &gt; a{color:#FFF;text-shadow:0px 1px 0px #000;background:url(http://2.bp.blogspot.com/-51AVZw6ffMo/T2w7KPc-AnI/AAAAAAAAEUc/p3mPwVC0uKE/s1600/menu-secondary-bg.png) left -136px repeat-x;outline:0;text-shadow:0 1px 0 #007199}
-.menu-secondary li li a{color:#fff;text-shadow:0px 1px 0px #000;background:#0699CE;padding:10px 15px;text-transform:none;margin:0;font-weight:normal;text-shadow:none}
-.menu-secondary li li a:hover,.menu-secondary li li a:active,.menu-secondary li li a:focus,.menu-secondary li li:hover &gt; a,.menu-secondary li li.current-cat &gt; a,.menu-secondary li li.current_page_item &gt; a,.menu-secondary li li.current-menu-item &gt; a{color:#fff;text-shadow:0px 1px 0px #000;background:#31B6E9;outline:0;text-shadow:none}
+.menu-secondary li li a{color:#fff;text-shadow:0px 1px 0px #000;background:#33363b;padding:10px 15px;text-transform:none;margin:0;font-weight:normal;text-shadow:none}
+.menu-secondary li li a:hover,.menu-secondary li li a:active,.menu-secondary li li a:focus,.menu-secondary li li:hover &gt; a,.menu-secondary li li.current-cat &gt; a,.menu-secondary li li.current_page_item &gt; a,.menu-secondary li li.current-menu-item &gt; a{color:#fff;text-shadow:0px 1px 0px #000;background:#33363b;outline:0;text-shadow:none}
 .menu-secondary a.sf-with-ul{padding-right:26px;min-width:1px}
 .menu-secondary .sf-sub-indicator{position:absolute;display:block;overflow:hidden;right:0;top:0;padding:11px 13px 0 0}
 .menu-secondary li li .sf-sub-indicator{padding:9px 13px 0 0}
@@ -841,7 +841,7 @@ SyntaxHighlighter.all();
 <!-- AddThis Button END -->
   <div id='body-wrapper'>
   <!-- Header Part Start-->
-  <div style='width:100%; background-color:#0699ce; height:59px'>
+  <div style='width:100%; background-color:#33363b; height:59px'>
     <div style='margin:0px auto;width:960px'> 
     <!-- Logo Start here -->
     <div style='float:left;width: 400px; padding:10px;'><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
@@ -976,7 +976,7 @@ google_ad_height = 15;
 									<li><a href='http://jquery.codehelper.in'>JQuery</a></li>
 								</ul>
 								</li>
-								<li><a href='http://codehelper4all.blogspot.in/search/label/ebooks' alt="Web Development eBooks">Web Development Books</a></li>
+								<li><a href='http://codehelper4all.blogspot.in/search/label/ebooks' ALT="Web Development eBooks">Web Development Books</a></li>
 							</ul>
 </div>
 
