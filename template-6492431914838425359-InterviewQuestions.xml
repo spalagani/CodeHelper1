@@ -115,7 +115,7 @@ a img{border-width:0}
     overflow: hidden;
     padding: 7px;
     text-shadow: 0 1px 0 #FFFFFF;
-    width: 290px;
+    width: 257px;
     word-wrap: break-word;}
 /* Headings----------------------------------------------- */
 h2{}
@@ -592,7 +592,7 @@ autoArrows:  true,
             });
 
 jQuery(document).ready(function() {
-alert("hi jquery");
+//alert("hi jquery");
 	jQuery('.fp-slides').cycle({
 		fx: 'scrollHorz',
 		timeout: 4000,
