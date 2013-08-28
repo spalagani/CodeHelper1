@@ -4,7 +4,6 @@
   <head>
 
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
-
 <b:include data='blog' name='all-head-content'/>
 
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
@@ -23,6 +22,11 @@
 <link href='YOUR-FAVICON-URL' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
 
     <b:skin><![CDATA[
+@font-face {
+	font-family: 'SEGOEUIL';
+	src: url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.eot');
+	src: local('SEGOEUIL'), url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.ttf') format('truetype');
+    }
 
 body#layout ul{list-style-type:none;list-style:none}
 body#layout ul li{list-style-type:none;list-style:none}
@@ -81,7 +85,7 @@ body#layout .social-profiles-widget h3 {display:none;}
 
 /* Use this with templates/template-twocol.html */
 
-body{color:#555555;font-family: Arial, Helvetica, Sans-serif;font-size: 13px;margin:0px;padding:0px;}
+body{color:#555555;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif !important;font-size: 13px;margin:0px;padding:0px;}
 a:link,a:visited{color:#046BB0;text-decoration:underline;outline:none;}
 a:hover{color:#27B6EF;text-decoration:none;outline:none;}
 a img{border-width:0}
@@ -91,8 +95,8 @@ a img{border-width:0}
 
 #header-inner{background-position:center;margin-left:auto;margin-right:auto}
 #header{margin:0;border:0 solid $bordercolor;color:$pagetitlecolor;float:left;width:100%%;overflow:hidden;}
-#header h1{color:#fff;text-shadow:0px 1px 0px #000;margin:0 5px 0;padding:0px 0px 0px 0px;font-family:&#39;Oswald&#39;,Arial,Helvetica,Sans-serif;font-weight:bold;font-size:32px;line-height:32px;}
-#header .description{padding-left:7px;color:#fff;text-shadow:0px 1px 0px #000;line-height:14px;font-size:14px;padding-top:0px;margin-top:10px;font-family:Arial,Helvetica,Sans-serif;}
+#header h1{color:#fff;text-shadow:0px 1px 0px #000;margin:0 5px 0;padding:0px 0px 0px 0px;font-family:&#39;Oswald&#39;,SEGOEUIL, Arial,Helvetica,Sans-serif;font-weight:bold;font-size:32px;line-height:32px;}
+#header .description{padding-left:7px;color:#fff;text-shadow:0px 1px 0px #000;line-height:14px;font-size:14px;padding-top:0px;margin-top:10px;font-family:SEGOEUIL, Arial,Helvetica,Sans-serif;}
 #header h1 a,#header h1 a:visited{color:#fff;text-decoration:none}
 #header h2{padding-left:5px;color:#fff;font:14px Arial,Helvetica,Sans-serif}
 #header2{float:right;width:51%;margin-right:0px;padding-right:0px;overflow:hidden;}
@@ -107,14 +111,13 @@ a img{border-width:0}
 #outer-wrapper{width:1024px;margin:0px auto 0px;padding:0px;text-align:left;}
 #content-wrapper{background:#fff;}
 #main-wrapper{background-color: #CCCCCC;    border-radius: 6px 6px 6px 6px;    float: left;    margin: 0;    overflow: hidden;    padding: 9px;
-    text-shadow: 0 1px 0 #FFFFFF;    width: 730px;    word-wrap: break-word;}
+        width: 730px;    word-wrap: break-word;}
 #rsidebar-wrapper{background-color: #CCCCCC;
     border-radius: 6px 6px 6px 6px;
     float: right;
     margin: 0;
     overflow: hidden;
     padding: 7px;
-    text-shadow: 0 1px 0 #FFFFFF;
     width: 257px;
     word-wrap: break-word;}
 /* Headings----------------------------------------------- */
@@ -123,10 +126,10 @@ h2{}
 h2.date-header{margin:1.5em 0 .5em;display:none;}
 .wrapfullpost{}
 .post{background-color: #FFFFFF; border: 1px solid; border-radius: 5px 5px 5px 5px; margin-bottom: 15px; padding: 10px;}
-.post-title{color:#066FB4;margin:0 0 10px 0;padding:0;font-family:Arial, Helvetica, Sans-serif;font-size:24px;line-height:24px;font-weight:bold;}
+.post-title{color:#066FB4;margin:0 0 10px 0;padding:0;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif;font-size:24px;line-height:24px;}
 .post-title a,.post-title a:visited,.post-title strong{display:block;text-decoration:none;color:#066FB4;text-decoration:none;}
 .post-title strong,.post-title a:hover{color:#26B5EF;text-decoration:none;}
-.post-body{margin:0px;padding:0px 10px 0px 0px;font-family:Arial, Helvetica, Sans-serif;font-size:12px;line-height: 20px;}
+.post-body{margin:0px;padding:0px 10px 0px 0px;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif;font-size:12px;line-height: 20px;}
 .post-footer{margin:5px 0;}
 .comment-link{margin-$startSide:.6em}
 .post-body img{padding:6px;border:1px solid #eee;background:#ffffff;}
@@ -207,7 +210,7 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
 .sidebar{margin:0 0 10px 0;font-size:13px;color:#0C5B8F;}
 .sidebar a{text-decoration:none;color:#0C5B8F;}
 .sidebar a:hover{text-decoration:none;color:#23ACE0;}
-.sidebar h2{background-color: #CCCCCC;margin:0 0 10px 0;padding:9px 0 9px 10px;color:#056DB2;font-size:12px;line-height:7px;font-family:Arial,Helvetica,Sans-serif;font-weight:bold;text-decoration:none;text-transform:uppercase;} 
+.sidebar h2{background-color: #CCCCCC;margin:0 0 10px 0;padding:9px 0 9px 10px;color:#056DB2;font-size:12px;line-height:7px;font-family:SEGOEUIL, Arial,Helvetica,Sans-serif;font-weight:bold;text-decoration:none;text-transform:uppercase;} 
 .sidebar ul{list-style-type:none;list-style:none;margin:0px;padding:0px;}
 .sidebar ul li{padding:0 0 9px 12px;margin:0 0 8px 0;background:url(http://3.bp.blogspot.com/-Caco7fhHUFA/T2w7Re1SVlI/AAAAAAAAEVU/NMex7G4CR7k/s1600/widget-list.png) left 4px no-repeat;border-bottom:1px dotted #48BFEA;}
 .sidebar .widget{margin:0 0 15px 0;padding:0;color:#0C5B8F;font-size:13px;}
@@ -696,11 +699,11 @@ blockquote{margin:20px;color:#666;}
 pre{margin:20px 0;white-space:pre}
 pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;line-height:18px}
 #search {overflow:hidden;}
-#header h1{font-family:&#39;Oswald&#39;,Arial,Helvetica,Sans-serif;}
+#header h1{font-family:SEGOEUIL,Arial,Helvetica,Sans-serif;}
 #header .description{font-family:Arial,Helvetica,Sans-serif;}
 .post-title {font-family:Arial,Helvetica,Sans-serif;}
 .sidebar h2{font-family:Arial,Helvetica,Sans-serif;}
-#footer-widgets .widgettitle{font-family:&#39;Oswald&#39;,sans-serif}
+#footer-widgets .widgettitle{font-family:SEGOEUIL,sans-serif}
 .menus,.menus *{margin:0;padding:0;list-style:none;list-style-type:none;line-height:1.0}
 .menus ul{position:absolute;top:-999em;width:100%}
 .menus ul li{width:100%}
@@ -765,7 +768,7 @@ pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;l
 .tabs-widget-content{}
 .tabviewsection{margin-top:10px;margin-bottom:10px;}
 #crosscol-wrapper{display:none;}
-.PopularPosts .item-title{font-weight:bold;padding-bottom:0.2em;text-shadow:0px 1px 0px #fff;}
+.PopularPosts .item-title{font-weight:bold;padding-bottom:0.2em;}
 .PopularPosts .widget-content ul li{padding:0.7em 0;background:none}
 .widget-container{list-style-type:none;list-style:none;margin:0 0 15px 0;padding:0;color:#0C5B8F;font-size:13px}
 .widget-container2{list-style-type:none;list-style:none;margin:5px 15px 10px 0px;padding:0;color:#0C5B8F;font-size:13px}
@@ -850,7 +853,7 @@ SyntaxHighlighter.all();
   <div style='width:100%; background-color:#33363b; height:59px'>
     <div style='margin:0px auto;width:1024px'> 
     <!-- Logo Start here -->
-    <div style='float:left;width: 400px; padding:10px;'><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+    <div style='float:left;width: 405px; padding:10px;'><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
 <b:widget id='Header1' locked='true' title='HTML5 Interview Questions (Header)' type='Header'>
 <b:includable id='title'>
 <a expr:href='data:blog.homepageUrl'><data:title/></a>
