@@ -143,15 +143,16 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
 .meta_tags{background-image:url(http://4.bp.blogspot.com/-lusL-JZ6I1s/T2w7P8Cl0RI/AAAAAAAAEVM/7Icgtf8yykM/s1600/tags.png)}
 .readmore{margin-bottom:5px;float:right}
 .readmore a{
+	background-color:#1e8cbe;
     border: 1px solid;
-    color: #0C7EC0;
+    color: #fff;
     display: inline-block;
     font-size: 12px;
     line-height: 12px;
     padding: 8px 14px;
     text-decoration: none;
     text-transform: uppercase;}
-.readmore a:hover{background-color:#1e8cbe;color:#fff;text-shadow:0px 1px 0px #000;text-decoration:none}
+.readmore a:hover{background-color:#ccc;color:#fff;text-shadow:0px 1px 0px #000;text-decoration:none}
 /* ebooks Content----------------------------------------------- */
 .booksDesk{-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
