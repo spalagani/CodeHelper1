@@ -151,7 +151,7 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
     padding: 8px 14px;
     text-decoration: none;
     text-transform: uppercase;}
-.readmore a:hover{background-color:#33363b;color:#fff;text-shadow:0px 1px 0px #000;text-decoration:none}
+.readmore a:hover{background-color:#1e8cbe;color:#fff;text-shadow:0px 1px 0px #000;text-decoration:none}
 /* ebooks Content----------------------------------------------- */
 .booksDesk{-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
@@ -598,7 +598,7 @@ jQuery(document).ready(function() {
  //alert(start);
 
 jQuery(window).scroll(function(){
-	alert("jQuery Scroll");
+	//alert("jQuery Scroll");
 	var p = jQuery(window).scrollTop();
          // alert(p);
          // alert(start)
@@ -773,7 +773,8 @@ pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;l
 .fp-next{margin-top:-180px;float:right;width:36px;height:37px;margin-right:14px;background:url(http://2.bp.blogspot.com/-MfeLs811Wug/T2w7AOu-GAI/AAAAAAAAETg/rj-qWu0tKY8/s1600/featured-next.png) right top no-repeat;opacity:0.6;filter:alpha(opacity = 60)}
 .fp-next:hover{opacity:0.8;filter:alpha(opacity = 80)}
 /* -- number page navigation -- */
-#blog-pager {padding:6px;font-size:15px; font-weight:bold; background-color:#FFF; margin-top:0px}
+#blog-pager {padding:6px;font-size:15px; font-weight:bold; background-color:#FFF; margin-top:0px;width: 718px;
+clear: both; overflow: auto; z-index: 100;}
 #comment-form iframe{padding:5px;width:580px;height:275px;}
 .tabs-widget{list-style:none;list-style-type:none;margin:0 0 10px 0;padding:0;height:26px}
 .tabs-widget li{list-style:none;list-style-type:none;margin:0 0 0 4px;padding:0;float:left}
@@ -865,7 +866,7 @@ SyntaxHighlighter.all();
 <!-- AddThis Button END -->
   <div id='body-wrapper'>
   <!-- Header Part Start-->
-  <div style='width:100%; background-color:#33363b; height:59px' id="headPart">
+  <div style='width:100%; background-color:#1e8cbe; height:59px' id="headPart">
     <div style='margin:0px auto;width:1024px'> 
     <!-- Logo Start here -->
     <div style='float:left;width: 405px; padding:10px;' ><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
