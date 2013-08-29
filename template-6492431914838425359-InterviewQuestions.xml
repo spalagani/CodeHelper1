@@ -85,7 +85,7 @@ body#layout .social-profiles-widget h3 {display:none;}
 
 /* Use this with templates/template-twocol.html */
 
-body{color:#555555;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif !important;font-size: 13px;margin:0px;padding:0px;}
+body{color:#555555;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif !important;font-size: 13px;margin:0px;padding:0px; background-color:rgb(241, 241, 241)}
 a:link,a:visited{color:#046BB0;text-decoration:underline;outline:none;}
 a:hover{color:#27B6EF;text-decoration:none;outline:none;}
 a img{border-width:0}
@@ -109,15 +109,14 @@ a img{border-width:0}
 #top-social-profiles .widget-container{background:none;padding:0;border:0}
 /* Outer-Wrapper----------------------------------------------- */
 #outer-wrapper{width:1024px;margin:0px auto 0px;padding:0px;text-align:left;}
-#content-wrapper{background:#fff;}
-#main-wrapper{background-color: #CCCCCC;    border-radius: 6px 6px 6px 6px;    float: left;    margin: 0;    overflow: hidden;    padding: 9px;
+#content-wrapper{}
+#main-wrapper{  float: left;    margin: 0;    overflow: hidden;    padding: 1px;
         width: 730px;    word-wrap: break-word;}
-#rsidebar-wrapper{background-color: #CCCCCC;
-    border-radius: 6px 6px 6px 6px;
+#rsidebar-wrapper{background-color: #fff;
     float: right;
     margin: 0;
     overflow: hidden;
-    padding: 7px;
+    padding: 10px;
     width: 257px;
     word-wrap: break-word;}
 /* Headings----------------------------------------------- */
@@ -125,9 +124,9 @@ h2{}
 /* Posts-----------------------------------------------*/
 h2.date-header{margin:1.5em 0 .5em;display:none;}
 .wrapfullpost{}
-.post{background-color: #FFFFFF; border: 1px solid; border-radius: 5px 5px 5px 5px; margin-bottom: 15px; padding: 10px;}
-.post-title{color:#066FB4;margin:0 0 10px 0;padding:0;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif;font-size:24px;line-height:24px;}
-.post-title a,.post-title a:visited,.post-title strong{display:block;text-decoration:none;color:#066FB4;text-decoration:none;}
+.post{background-color: #FFFFFF; margin-bottom: 15px; padding: 10px;}
+.post-title{color:#000;margin:0 0 10px 0;padding:0;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif;font-size:25px;line-height:24px; font-weight: bold; letter-spacing: -1px;}
+.post-title a,.post-title a:visited,.post-title strong{display:block;text-decoration:none;color:#000;text-decoration:none;}
 .post-title strong,.post-title a:hover{color:#26B5EF;text-decoration:none;}
 .post-body{margin:0px;padding:0px 10px 0px 0px;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif;font-size:12px;line-height: 20px;}
 .post-footer{margin:5px 0;}
@@ -143,9 +142,8 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
 .meta_categories{background-image:url(http://1.bp.blogspot.com/-T0Mr7Wgt8ro/T2w68u35vfI/AAAAAAAAETM/H5HS_l_gwg8/s1600/category.png)}
 .meta_tags{background-image:url(http://4.bp.blogspot.com/-lusL-JZ6I1s/T2w7P8Cl0RI/AAAAAAAAEVM/7Icgtf8yykM/s1600/tags.png)}
 .readmore{margin-bottom:5px;float:right}
-.readmore a{background: url("http://3.bp.blogspot.com/-vRTL-7Ig9Uk/T2w7M2Q_1YI/AAAAAAAAEU0/Nz0K3miSwKo/s1600/readmore-bg.png") repeat-x scroll left top #D8E5F3;
+.readmore a{
     border: 1px solid;
-    border-radius: 5px 5px 5px 5px;
     color: #0C7EC0;
     display: inline-block;
     font-size: 12px;
@@ -153,7 +151,7 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
     padding: 8px 14px;
     text-decoration: none;
     text-transform: uppercase;}
-.readmore a:hover{color:#fff;text-shadow:0px 1px 0px #000;background:#0598CD url(http://3.bp.blogspot.com/-vRTL-7Ig9Uk/T2w7M2Q_1YI/AAAAAAAAEU0/Nz0K3miSwKo/s1600/readmore-bg.png) left -126px repeat-x;text-decoration:none}
+.readmore a:hover{background-color:#33363b;color:#fff;text-shadow:0px 1px 0px #000;text-decoration:none}
 /* ebooks Content----------------------------------------------- */
 .booksDesk{-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
@@ -594,6 +592,23 @@ autoArrows:  true,
 
 jQuery(document).ready(function() {
 //alert("hi jquery");
+
+ var div1 = jQuery('#blog-pager');
+    var start = jQuery('#blog-pager').offset().top;
+ //alert(start);
+
+jQuery(window).scroll(function(){
+	alert("jQuery Scroll");
+	var p = jQuery(window).scrollTop();
+         // alert(p);
+         // alert(start)
+        jQuery(div1).css('position',((p)>start) ? 'fixed' : 'static');
+        jQuery(div1).css('top',((p)>start) ? '0px' : '');
+});
+    jQuery.event.add(window, "scroll", function() {
+        
+    });
+
 	jQuery('.fp-slides').cycle({
 		fx: 'scrollHorz',
 		timeout: 4000,
@@ -701,7 +716,7 @@ pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;l
 #search {overflow:hidden;}
 #header h1{font-family:SEGOEUIL,Arial,Helvetica,Sans-serif;}
 #header .description{font-family:Arial,Helvetica,Sans-serif;}
-.post-title {font-family:Arial,Helvetica,Sans-serif;}
+.post-title {font-family:SEGOEUIL, Arial, Helvetica, Sans-serif !important;}
 .sidebar h2{font-family:Arial,Helvetica,Sans-serif;}
 #footer-widgets .widgettitle{font-family:SEGOEUIL,sans-serif}
 .menus,.menus *{margin:0;padding:0;list-style:none;list-style-type:none;line-height:1.0}
@@ -758,7 +773,7 @@ pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;l
 .fp-next{margin-top:-180px;float:right;width:36px;height:37px;margin-right:14px;background:url(http://2.bp.blogspot.com/-MfeLs811Wug/T2w7AOu-GAI/AAAAAAAAETg/rj-qWu0tKY8/s1600/featured-next.png) right top no-repeat;opacity:0.6;filter:alpha(opacity = 60)}
 .fp-next:hover{opacity:0.8;filter:alpha(opacity = 80)}
 /* -- number page navigation -- */
-#blog-pager {padding:6px;font-size:15px; font-weight:bold; background-color:#FFF; border-radius:5px}
+#blog-pager {padding:6px;font-size:15px; font-weight:bold; background-color:#FFF; margin-top:0px}
 #comment-form iframe{padding:5px;width:580px;height:275px;}
 .tabs-widget{list-style:none;list-style-type:none;margin:0 0 10px 0;padding:0;height:26px}
 .tabs-widget li{list-style:none;list-style-type:none;margin:0 0 0 4px;padding:0;float:left}
@@ -839,21 +854,21 @@ SyntaxHighlighter.all();
 
   <body>
 <!-- AddThis Button BEGIN -->
-<div class='addthis_toolbox addthis_floating_style addthis_counter_style' style='left:55px;top:100px;'>
+<!-- <div class='addthis_toolbox addthis_floating_style addthis_counter_style' style='left:55px;top:100px;'>
 <a class='addthis_button_facebook_like' fb:like:layout='box_count'/>
 <a class='addthis_button_tweet' tw:count='vertical'/>
 <a class='addthis_button_google_plusone' g:plusone:size='tall'/>
 <a class='addthis_counter'/>
 </div>
 <script type='text/javascript'>var addthis_config = {&quot;data_track_addressbar&quot;:true};</script>
-<script src='http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ffbae1e3e1d086d' type='text/javascript'/>
+<script src='http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ffbae1e3e1d086d' type='text/javascript'/> -->
 <!-- AddThis Button END -->
   <div id='body-wrapper'>
   <!-- Header Part Start-->
-  <div style='width:100%; background-color:#33363b; height:59px'>
+  <div style='width:100%; background-color:#33363b; height:59px' id="headPart">
     <div style='margin:0px auto;width:1024px'> 
     <!-- Logo Start here -->
-    <div style='float:left;width: 405px; padding:10px;'><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+    <div style='float:left;width: 405px; padding:10px;' ><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
 <b:widget id='Header1' locked='true' title='HTML5 Interview Questions (Header)' type='Header'>
 <b:includable id='title'>
 <a expr:href='data:blog.homepageUrl'><data:title/></a>
@@ -1015,17 +1030,17 @@ Ads Area Ends here -->
 <b:includable id='nextprev'>
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
-      <span id='blog-pager-newer-link'>
+      <span id='blog-pager-newer-link' class="readmore">
       <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>Previous Interview Question</a>
       </span>
     </b:if>
 
     <b:if cond='data:olderPageUrl'>
-      <span id='blog-pager-older-link'>
+      <span id='blog-pager-older-link' class="readmore">
       <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>Next Interview Question</a>
       </span>
     </b:if>
-    <div style='width:728px; height:90px; margin-top:11px;  float:left'>
+    <div style='width:728px; height:90px;  float:left'>
 								<script type='text/javascript'>
 google_ad_client = &quot;ca-pub-9389330280256831&quot;;
 google_ad_host = &quot;pub-1556223355139109&quot;;
@@ -1039,7 +1054,7 @@ google_ad_height = 90;
 </script>
 							</div>
     <b:if cond='data:blog.homepageUrl != data:blog.url'>
-      <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+    	<a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
       <b:else/>
       <b:if cond='data:newerPageUrl'>
         <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
@@ -1503,13 +1518,13 @@ google_ad_height = 250;
 <b:includable id='mobile-nextprev'>
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
-      <div class='mobile-link-button' id='blog-pager-newer-link'>
+      <div class='mobile-link-button readmore' id='blog-pager-newer-link' >
       <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>Previous Interview Question</a>
       </div>
     </b:if>
 
     <b:if cond='data:olderPageUrl'>
-      <div class='mobile-link-button' id='blog-pager-older-link'>
+      <div class='mobile-link-button readmore' id='blog-pager-older-link' >
       <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>Next Interview Question</a>
       </div>
     </b:if>
