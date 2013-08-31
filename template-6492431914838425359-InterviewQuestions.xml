@@ -890,7 +890,7 @@ SyntaxHighlighter.all();
   <div style='width:100%; background-color:#1e8cbe; height:59px' id="headPart">
     <div style='margin:0px auto;width:1024px'> 
     <!-- Logo Start here -->
-    <div style='float:left;width: 405px; padding:10px;' ><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+    <div style='float:left; padding:10px;' ><b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
 <b:widget id='Header1' locked='true' title='HTML5 Interview Questions (Header)' type='Header'>
 <b:includable id='title'>
 <a expr:href='data:blog.homepageUrl'><data:title/></a>
