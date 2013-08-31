@@ -152,7 +152,7 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
     padding: 8px 14px;
     text-decoration: none;
     text-transform: uppercase;}
-.readmore a:hover{background-color:#ccc;color:#1e8cbe;text-shadow:0px 1px 0px #000;text-decoration:none}
+.readmore a:hover{background-color:#ccc;color:#1e8cbe;text-decoration:none}
 /* ebooks Content----------------------------------------------- */
 .booksDesk{-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
@@ -774,7 +774,7 @@ pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;l
 .fp-next{margin-top:-180px;float:right;width:36px;height:37px;margin-right:14px;background:url(http://2.bp.blogspot.com/-MfeLs811Wug/T2w7AOu-GAI/AAAAAAAAETg/rj-qWu0tKY8/s1600/featured-next.png) right top no-repeat;opacity:0.6;filter:alpha(opacity = 60)}
 .fp-next:hover{opacity:0.8;filter:alpha(opacity = 80)}
 /* -- number page navigation -- */
-#blog-pager {padding:6px;font-size:15px; font-weight:bold; background-color:#FFF; margin-top:0px;width: 718px;
+#blog-pager {padding:6px;font-size:15px; font-weight:bold; background-color:#FFF; margin-top:0px;width: 722px;
 clear: both; overflow: auto; z-index: 100;}
 #comment-form iframe{padding:5px;width:580px;height:275px;}
 .tabs-widget{list-style:none;list-style-type:none;margin:0 0 10px 0;padding:0;height:26px}
