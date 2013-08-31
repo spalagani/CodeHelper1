@@ -116,7 +116,8 @@ a img{border-width:0}
     float: right;
     margin: 0;
     overflow: hidden;
-    padding: 10px;
+    padding: 10px 0p
+    ;
     width: 257px;
     word-wrap: break-word;}
 /* Headings----------------------------------------------- */
@@ -805,6 +806,25 @@ div.span-1,div.span-2,div.span-3,div.span-4,div.span-5,div.span-6,div.span-7,div
     font-family: verdana;
     font-size: 12px;
     line-height: 1.2;
+}
+.subProLinks {
+	margin: 0px;
+	padding: 0px;
+}
+.subProLinks li {
+	line-height: 15px;
+	background-color: #1e8cbe;
+	list-style: none;
+	display: block;
+	margin-bottom: 1px;
+	padding: 13px;
+}
+.subProLinks li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+
 }
 </style>
 
@@ -1717,6 +1737,25 @@ google_ad_height = 250;
 #blog-pager-newer-link a{color:#666;text-decoration:none}
 #blog-pager-older-link a{color:#666;text-decoration:none}
 .home-link a{color:#666;text-decoration:none}
+.subProLinks {
+	margin: 0px;
+	padding: 0px;
+}
+.subProLinks li {
+	line-height: 15px;
+	background-color: #1e8cbe;
+	list-style: none;
+	display: block;
+	margin-bottom: 1px;
+	padding: 13px;
+}
+.subProLinks li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+
+}
 </style>
 
   <!-- navigation -->
@@ -1928,6 +1967,7 @@ google_ad_height = 250;
     position: relative;
 }
 
+
 /* Responsive styles. */
 @media screen and (max-device-width: 480px) {
   .comments .comments-content .comment-replies {
@@ -2117,10 +2157,17 @@ google_ad_height = 250;
       </div>
 
       <div id='rsidebar-wrapper'>
-	  
-<div class='widget-container'>
+	  <div>
+	  	<ul class="subProLinks">
+	  		<li><a href="http://html5.codehelper.in/" target="_blank">HTML Interview Questions</a></li>
+	  		<li><a href="http://css3.codehelper.in/" target="_blank">CSS Interview Questions</a></li>
+	  		<li><a href="http://jquery.codehelper.in/search/label/JavaScript" target="_blank">Javascript Interview Questions</a></li>
+	  		<li><a href="http://jquery.codehelper.in/search/label/jquery" target="_blank">JQuery Interview Questions</a></li>
+	  	</ul>
+	  </div>
+<!-- <div class='widget-container'>
 
-</div>
+</div> -->
 <div style='clear:both;'/>
 
 <div class='widget-container'>
