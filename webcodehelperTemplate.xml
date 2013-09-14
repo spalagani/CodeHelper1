@@ -22,8 +22,8 @@
     </b:if>
     <!-- End www.bloggertipandtrick.net: Changing the Blogger Title Tag  -->
     <link href='http://4.bp.blogspot.com/-BZmKPERjcYE/UiIPnYOUe0I/AAAAAAAABt0/l2nag5gyzJA/s1600/favicon.ico' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
-    <b:skin>
-      <![CDATA[
+    <b:skin><![CDATA[
+      
 @font-face {
 font-family: 'SEGOEUIL';
 src: url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.eot');
@@ -163,8 +163,8 @@ width:98%; height:110px; background-color:#CCC; padding: 3px 15px;
 .booksDesk h3 {font: 18px/100% "Trebuchet MS",Arial,Helvetica,sans-serif;
 margin: 0;
 padding-bottom: 5px;
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);}	
-.booksDesk .desc { font: 16px/100% "Trebuchet MS", Arial, Helvetica, sans-serif; padding-bottom:2px;}	
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);} 
+.booksDesk .desc { font: 16px/100% "Trebuchet MS", Arial, Helvetica, sans-serif; padding-bottom:2px;} 
 .orange {
 color: #fef4e9;
 border: solid 1px #da7c0c;
@@ -251,8 +251,8 @@ width:98%; height:110px; background-color:#CCC; padding: 3px 15px;
 .booksDesk h3 {font: 18px/100% "Trebuchet MS",Arial,Helvetica,sans-serif;
 margin: 0;
 padding-bottom: 5px;
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);}	
-.booksDesk .desc { font: 16px/100% "Trebuchet MS", Arial, Helvetica, sans-serif; padding-bottom:2px;}	
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);} 
+.booksDesk .desc { font: 16px/100% "Trebuchet MS", Arial, Helvetica, sans-serif; padding-bottom:2px;} 
 .orange {
 color: #fef4e9;
 border: solid 1px #da7c0c;
@@ -298,8 +298,8 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
 .profile-link{font:$postfooterfont;text-transform:uppercase;letter-spacing:.1em}
 #navbar-iframe{height:0;visibility:hidden;display:none;}
 .samplecode { background-color: #ededed; border: 1px dashed #ff3c00; padding: 5px; font: 14px verdana;}
-]]>
-    </b:skin>
+
+    ]]></b:skin>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js' type='text/javascript'/>
     <script type='text/javascript'>
       //<![CDATA[
@@ -385,8 +385,8 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
  * Copyright (c) 2008 Joel Birch
  *
  * Dual licensed under the MIT and GPL licenses:
- * 	http://www.opensource.org/licenses/mit-license.php
- * 	http://www.gnu.org/licenses/gpl.html
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.gnu.org/licenses/gpl.html
  *
  * CHANGELOG: http://users.tpg.com.au/j_birch/plugins/superfish/changelog.txt
  */
@@ -407,7 +407,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
                   o.retainPath=($.inArray($$[0],o.$path)>-1);
                   $$.hideSuperfishUl();
                   if (o.$path.length && $$.parents(['li.',o.hoverClass].join('')).length<1){over.call(o.$path);}
-                },o.delay);	
+                },o.delay); 
               },
               getMenu = function($menu){
                 var menu = $menu.parents(['ul.',c.menuClass,':first'].join(''))[0];
@@ -456,19 +456,19 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
           shadowClass : 'sf-shadow'
         };
         sf.defaults = {
-          hoverClass	: 'sfHover',
-          pathClass	: 'overideThisToUse',
-          pathLevels	: 1,
-          delay		: 800,
-          animation	: {opacity:'show'},
-          speed		: 'normal',
-          autoArrows	: true,
+          hoverClass  : 'sfHover',
+          pathClass : 'overideThisToUse',
+          pathLevels  : 1,
+          delay   : 800,
+          animation : {opacity:'show'},
+          speed   : 'normal',
+          autoArrows  : true,
           dropShadows : true,
-          disableHI	: false,		// true disables hoverIntent detection
-          onInit		: function(){}, // callback functions
+          disableHI : false,    // true disables hoverIntent detection
+          onInit    : function(){}, // callback functions
           onBeforeShow: function(){},
-          onShow		: function(){},
-          onHide		: function(){}
+          onShow    : function(){},
+          onHide    : function(){}
         };
         $.fn.extend({
           hideSuperfishUl : function(){
@@ -511,7 +511,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
  * This script is a plugin for the jQuery Cycle Plugin
  * Examples and documentation at: http://malsup.com/jquery/cycle/
  * Copyright (c) 2007-2010 M. Alsup
- * Version:	 2.72
+ * Version:  2.72
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
@@ -609,7 +609,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
         var imgtag = "";
         var img = div.getElementsByTagName("img");
         var summ = summary_noimg;
-        if(img.length>=1) {	
+        if(img.length>=1) { 
           imgtag = '<span style="float:left; padding:0px 10px 5px 0px;"><img src="'+img[0].src+'" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px"/></span>';
           summ = summary_img;
         }
@@ -725,7 +725,25 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
       h3.widgettitle{background-color: #CCCCCC;margin:0 0 10px 0;padding:9px 0 9px 10px;color:#056DB2;font-size:12px;line-height:7px;font-family:Arial,Helvetica,Sans-serif;font-weight:bold;text-decoration:none;text-transform:uppercase;}
       div.span-1,div.span-2,div.span-3,div.span-4,div.span-5,div.span-6,div.span-7,div.span-8,div.span-9,div.span-10,div.span-11,div.span-12,div.span-13,div.span-14,div.span-15,div.span-16,div.span-17,div.span-18,div.span-19,div.span-20,div.span-21,div.span-22,div.span-23,div.span-24{float:left;margin-right:10px}
       .span-1{width:30px}.span-2{width:70px}.span-3{width:110px}.span-4{width:150px}.span-5{width:190px}.span-6{width:230px}.span-7{width:270px}.span-8{width:310px}.span-9{width:350px}.span-10{width:390px}.span-11{width:430px}.span-12{width:470px}.span-13{width:510px}.span-14{width:550px}.span-15{width:590px}.span-16{width:630px}.span-17{width:670px}.span-18{width:710px}.span-19{width:750px}.span-20{width:790px}.span-21{width:830px}.span-22{width:870px}.span-23{width:910px}.span-24,div.span-24{width:1024px;margin:0}input.span-1,textarea.span-1,input.span-2,textarea.span-2,input.span-3,textarea.span-3,input.span-4,textarea.span-4,input.span-5,textarea.span-5,input.span-6,textarea.span-6,input.span-7,textarea.span-7,input.span-8,textarea.span-8,input.span-9,textarea.span-9,input.span-10,textarea.span-10,input.span-11,textarea.span-11,input.span-12,textarea.span-12,input.span-13,textarea.span-13,input.span-14,textarea.span-14,input.span-15,textarea.span-15,input.span-16,textarea.span-16,input.span-17,textarea.span-17,input.span-18,textarea.span-18,input.span-19,textarea.span-19,input.span-20,textarea.span-20,input.span-21,textarea.span-21,input.span-22,textarea.span-22,input.span-23,textarea.span-23,input.span-24,textarea.span-24{border-left-width:1px!important;border-right-width:1px!important;padding-left:5px!important;padding-right:5px!important}input.span-1,textarea.span-1{width:18px!important}input.span-2,textarea.span-2{width:58px!important}input.span-3,textarea.span-3{width:98px!important}input.span-4,textarea.span-4{width:138px!important}input.span-5,textarea.span-5{width:178px!important}input.span-6,textarea.span-6{width:218px!important}input.span-7,textarea.span-7{width:258px!important}input.span-8,textarea.span-8{width:298px!important}input.span-9,textarea.span-9{width:338px!important}input.span-10,textarea.span-10{width:378px!important}input.span-11,textarea.span-11{width:418px!important}input.span-12,textarea.span-12{width:458px!important}input.span-13,textarea.span-13{width:498px!important}input.span-14,textarea.span-14{width:538px!important}input.span-15,textarea.span-15{width:578px!important}input.span-16,textarea.span-16{width:618px!important}input.span-17,textarea.span-17{width:658px!important}input.span-18,textarea.span-18{width:698px!important}input.span-19,textarea.span-19{width:738px!important}input.span-20,textarea.span-20{width:778px!important}input.span-21,textarea.span-21{width:818px!important}input.span-22,textarea.span-22{width:858px!important}input.span-23,textarea.span-23{width:898px!important}input.span-24,textarea.span-24{width:938px!important}.last{margin-right:0;padding-right:0}
+      .demoDownloadArea {text-align: center; clear: both; overflow: auto;margin: 20px;}
       .last,div.last{margin-right:0}
+.button{float:left;list-style:none;text-align:center;width: 100%;margin:5px 0;padding:0;font-size:14px;clear:both;}
+.button ul {margin:0;padding:0}
+.button li{display:inline;margin:0;padding:0}
+.demo {border: none; -moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;padding: 8px 80px !important; background: #E55E48; color: #fff !important;text-align: center; text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); -ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); transition: background-color 1s ease-out 0s; -moz-transition:background-color 1s ease-out 0s; -webkit-transition:background-color 1s ease-out 0s; -o-transition:background-color 1s ease-out 0s;letter-spacing:1px; }
+.download {border: none; -moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;padding: 8px 80px !important; background: #5FAAE3; color: #fff !important;text-align: center; text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); -ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); transition: background-color 1s ease-out 0s; -moz-transition:background-color 1s ease-out 0s; -webkit-transition:background-color 1s ease-out 0s; -o-transition:background-color 1s ease-out 0s; letter-spacing:1px;}
+.demo:hover { background: #454242; text-shadow: 0 0 1px #222; -moz-text-shadow: 0 0 1px #222; -webkit-text-shadow: 0 0 1px #222; -ms-text-shadow: 0 0 1px #222 }
+.download:hover { background: #454242; text-shadow: 0 0 1px #222; -moz-text-shadow: 0 0 1px #222; -webkit-text-shadow: 0 0 1px #222; -ms-text-shadow: 0 0 1px #222 }
+div.showCode {
+font-family: Courier,monospace,Courier New;
+font-size: 13px;
+color: #000;
+border: dashed 2px #dedede;
+padding: 10px;
+line-height: 16px;
+width: 650px;
+word-wrap: break-word;
+}
       #sb a{ padding-left:2px;}
       .adt {
         font-family: verdana;
@@ -779,26 +797,27 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
       {lang: &#39;en-US&#39;}
     </script>
     <!--SYNTAX HIGHLIGHTER BEGINS-->
-    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
-    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushVb.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/>
-    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPerl.js' type='text/javascript'/>
-    <script language='javascript'>
-      SyntaxHighlighter.config.bloggerMode = true;
-      SyntaxHighlighter.config.clipboardSwf = &#39;http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf&#39;;
-      SyntaxHighlighter.all();
-    </script>
+    <link href='http://alexgorbatchev.com/pub/sh/2.1.364/styles/shCore.css' rel='stylesheet' type='text/css'/> 
+<link href='http://alexgorbatchev.com/pub/sh/2.1.364/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shCore.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushCpp.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushCSharp.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushCss.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushJava.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushJScript.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushPhp.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushPython.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushRuby.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushSql.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushVb.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushXml.js' type='text/javascript'/> 
+<script src='http://alexgorbatchev.com/pub/sh/2.1.364/scripts/shBrushPerl.js' type='text/javascript'/> 
+<script language='javascript'> 
+SyntaxHighlighter.config.bloggerMode = true;
+SyntaxHighlighter.config.clipboardSwf = &#39;http://alexgorbatchev.com/pub/sh/2.1.364/scripts/clipboard.swf&#39;;
+SyntaxHighlighter.all();
+</script>
+
     <!--SYNTAX HIGHLIGHTER ENDS-->
   </head>
   <body>
@@ -819,7 +838,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
           <!-- Logo Start here -->
           <div style='float:left; padding:10px;'>
             <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-              <b:widget id='Header1' locked='true' title='Jquery Lastest Interview Questions (Header)' type='Header'>
+              <b:widget id='Header1' locked='true' title='Web CodeHelpers (Header)' type='Header'>
                 <b:includable id='main'>
                   <b:if cond='data:useImage'>
                     <b:if cond='data:imagePlacement == &quot;REPLACE&quot;'>
@@ -882,7 +901,7 @@ user is not using shrink to fit then we expand the header.
             <a href='http://twitter.com/#!/codehelper4all' target='_blank'>
               <img alt='Twitter' src='http://2.bp.blogspot.com/-oFF4HrEbwaI/To9NpETr6dI/AAAAAAAAEJk/jowvXNvTKcY/s1600/twitter.png' title='Twitter'/>
             </a>
-            <a href='http://facebook.com/webcode' target='_blank'>
+            <a href='https://www.facebook.com/webcodehelpers' target='_blank'>
               <img alt='Facebook' src='http://4.bp.blogspot.com/-O6nMA1_akTo/To9NmwKzo4I/AAAAAAAAEJU/UFiFTyAJbnw/s1600/facebook.png' title='Facebook'/>
             </a>
             <a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' target='_blank'>
@@ -938,7 +957,7 @@ user is not using shrink to fit then we expand the header.
           </div>
           <div style='clear:both;'/>
           <div class='span-24'>
-            <div class='menu-secondary-container'>
+            <!-- <div class='menu-secondary-container'>
 <ul class='menus menu-secondary'>
 <li><a href='http://www.codehelper.in'>Home</a></li>
 <li><a href='http://codehelper4all.blogspot.in/search/label/HTML'>HTML5</a></li>
@@ -963,7 +982,7 @@ user is not using shrink to fit then we expand the header.
 </li>
 <li><a href='http://codehelper4all.blogspot.in/search/label/ebooks' ALT="Web Development eBooks">Web Development Books</a></li>
 </ul>
-</div>
+</div> -->
           </div>
           <div style='clear:both;'/>
           <!-- Ads Area Starts here
@@ -971,7 +990,7 @@ user is not using shrink to fit then we expand the header.
 <div style='width:220px; height:90px; float:right'>
 </div>
 </div>
-Ads Area Ends here -->						
+Ads Area Ends here -->            
           <div style='clear:both;'/>
           <div id='content-wrapper'>
             <div id='crosscol-wrapper' style='text-align:center'>
@@ -1423,14 +1442,14 @@ Ads Area Ends here -->
                       <b:if cond='data:newerPageUrl'>
                         <div class='mobile-link-button readmore' id='blog-pager-newer-link'>
                           <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>
-                            Previous Interview Question
+                            Previous Interesting Web Article
                           </a>
                         </div>
                       </b:if>
                       <b:if cond='data:olderPageUrl'>
                         <div class='mobile-link-button readmore' id='blog-pager-older-link'>
                           <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>
-                            Next Interview Question
+                            Next Interesting Web Article
                           </a>
                         </div>
                       </b:if>
@@ -1568,14 +1587,14 @@ Ads Area Ends here -->
                       <b:if cond='data:newerPageUrl'>
                         <span class='readmore' id='blog-pager-newer-link'>
                           <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>
-                            Previous Interview Question
+                            Previous Interesting Web Article
                           </a>
                         </span>
                       </b:if>
                       <b:if cond='data:olderPageUrl'>
                         <span class='readmore' id='blog-pager-older-link'>
                           <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>
-                            Next Interview Question
+                            Next Interesting Web Article
                           </a>
                         </span>
                       </b:if>
@@ -2254,22 +2273,22 @@ Ads Area Ends here -->
               <div>
                 <ul class='subProLinks'>
                   <li>
-                    <a href='http://html5.codehelper.in/' target='_blank'>
+                    <a href='http://html5.webcodehelpers.com/' target='_blank'>
                       HTML Interview Questions
                     </a>
                   </li>
                   <li>
-                    <a href='http://css3.codehelper.in/' target='_blank'>
+                    <a href='http://css3.webcodehelpers.com/' target='_blank'>
                       CSS Interview Questions
                     </a>
                   </li>
                   <li>
-                    <a href='http://jquery.codehelper.in/search/label/JavaScript' target='_blank'>
+                    <a href='http://javascript.webcodehelpers.com/' target='_blank'>
                       Javascript Interview Questions
                     </a>
                   </li>
                   <li>
-                    <a href='http://jquery.codehelper.in/search/label/jquery' target='_blank'>
+                    <a href='http://jquery.webcodehelpers.com/' target='_blank'>
                       JQuery Interview Questions
                     </a>
                   </li>
