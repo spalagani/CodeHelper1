@@ -541,16 +541,21 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
       });
       jQuery(document).ready(function() {
         //alert("hi jquery");
+        var sideRapper = document.getElementById('rsidebar-wrapper');
         var blogpager = document.getElementsByClassName('blog-pager');
-        console.log(blogpager[0].innerHTML);
+        //console.log(blogpager[0].innerHTML);
         var div1 = jQuery(blogpager[0]);
         var start = jQuery(blogpager[0]).offset().top;
+        var siderapperstart = jQuery(sideRapper).offset().top;
         //alert(start);
         jQuery(window).scroll(function(){
           //alert("jQuery Scroll");
           var p = jQuery(window).scrollTop();
-          // alert(p);
+           console.log(p);
           // alert(start)
+          jQuery(sideRapper).css('position',((p)>siderapperstart) ? 'fixed' : 'static');
+          jQuery(sideRapper).css({'top':((p)>siderapperstart) ? '0px' : '', 'right':'104px'});
+
           jQuery(div1).css('position',((p)>start) ? 'fixed' : 'static');
           jQuery(div1).css('top',((p)>start) ? '0px' : '');
         });
@@ -610,10 +615,10 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
         var img = div.getElementsByTagName("img");
         var summ = summary_noimg;
         if(img.length>=1) { 
-          imgtag = '<span style="float:left; padding:0px 10px 5px 0px;"><img src="'+img[0].src+'" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px"/></span>';
+          imgtag = '<span style="padding:0px 10px 5px 0px;"><img src="'+img[0].src+'" /></span>';
           summ = summary_img;
         }
-        var summary = imgtag + '<div>' + removeHtmlTag(div.innerHTML,summ) + '</div>';
+        var summary = '<div>' + removeHtmlTag(div.innerHTML,summ) + '</div>' + imgtag ;
         div.innerHTML = summary;
       }
       //]]>
@@ -821,6 +826,20 @@ SyntaxHighlighter.all();
     <!--SYNTAX HIGHLIGHTER ENDS-->
   </head>
   <body>
+    <div id="fb-root">
+</div>
+<script>
+ //<![CDATA[
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1431879320371578";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+/* ]]> */
+</script>
+
     <!-- AddThis Button BEGIN -->
     <!-- <div class='addthis_toolbox addthis_floating_style addthis_counter_style' style='left:55px;top:100px;'>
 <a class='addthis_button_facebook_like' fb:like:layout='box_count'/>
