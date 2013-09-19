@@ -945,7 +945,19 @@ user is not using shrink to fit then we expand the header.
           <!-- Logo Ends Here -->
           <div class="facebookLikeShare" style='float:left; padding:19px;'>
               <div class="fb-like" data-href="https://www.facebook.com/webcodehelpers" data-width="450" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+              <!-- Place this tag where you want the +1 button to render. -->
+              <div class="g-plusone"></div>
+
+              <!-- Place this tag after the last +1 button tag. -->
+              <script type="text/javascript">
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
           </div>
+
           <!-- Social BookMark Start-->
           <div id='sb' style='float:right; padding:10px;'>
             <a href='http://twitter.com/#!/codehelper4all' target='_blank'>
