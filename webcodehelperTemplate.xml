@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'/>
     <b:include data='blog' name='all-head-content'/>
     <b:if cond='data:blog.url == data:blog.homepageUrl'>
       <meta content='DESCRIPTION HERE' name='description'/>
@@ -24,12 +24,12 @@
     <link href='http://4.bp.blogspot.com/-BZmKPERjcYE/UiIPnYOUe0I/AAAAAAAABt0/l2nag5gyzJA/s1600/favicon.ico' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
     <b:skin><![CDATA[
       
-@font-face {
+<!-- @font-face {
 font-family: 'SEGOEUIL';
 src: url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.eot');
 src: local('SEGOEUIL'), url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.ttf') format('truetype');
 }
-body#layout ul{list-style-type:none;list-style:none}
+ -->body#layout ul{list-style-type:none;list-style:none}
 body#layout ul li{list-style-type:none;list-style:none}
 body#layout #myGallery{display:none}
 body#layout .featuredposts{display:none}
@@ -67,23 +67,23 @@ type="color" default="#999" value="#999999">
 type="font" default="normal normal 100% Georgia, Serif" value="normal normal 100% Georgia, Serif">
 <Variable name="headerfont" description="Sidebar Title Font"
 type="font"
-default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif" value="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
+default="normal normal 78% 'Muli',Trebuchet,Arial,Verdana,Sans-serif" value="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
 <Variable name="pagetitlefont" description="Blog Title Font"
 type="font"
 default="normal normal 200% Georgia, Serif" value="normal normal 200% Georgia, Serif">
 <Variable name="descriptionfont" description="Blog Description Font"
 type="font"
-default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+default="normal normal 78% 'Muli', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
 <Variable name="postfooterfont" description="Post Footer Font"
 type="font"
-default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+default="normal normal 78% 'Muli', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
 <Variable name="startSide" description="Side where text starts in blog language"
 type="automatic" default="left" value="left">
 <Variable name="endSide" description="Side where text ends in blog language"
 type="automatic" default="right" value="right">
 */
 /* Use this with templates/template-twocol.html */
-body{color:#555555;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif !important;font-size: 13px;margin:0px;padding:0px; background-color:rgb(241, 241, 241)}
+body{color:#555555;font-family: 'Muli', Arial, Helvetica, Sans-serif !important;font-size: 13px;margin:0px;padding:0px; background-color:rgb(241, 241, 241)}
 a:link,a:visited{color:#046BB0;text-decoration:underline;outline:none;}
 a:hover{color:#27B6EF;text-decoration:none;outline:none;}
 a img{border-width:0}
@@ -92,8 +92,8 @@ a img{border-width:0}
 #header-wrapper{width:1024px;margin:0px auto 0px;height:17px;overflow:hidden;}
 #header-inner{background-position:center;margin-left:auto;margin-right:auto}
 #header{margin:0;border:0 solid $bordercolor;color:$pagetitlecolor;float:left;width:100%%;overflow:hidden;}
-#header h1{color:#fff;text-shadow:0px 1px 0px #000;margin:0 5px 0;padding:0px 0px 0px 0px;font-family:&#39;Oswald&#39;,SEGOEUIL, Arial,Helvetica,Sans-serif;font-weight:bold;font-size:32px;line-height:32px;}
-#header .description{padding-left:7px;color:#fff;text-shadow:0px 1px 0px #000;line-height:14px;font-size:14px;padding-top:0px;margin-top:10px;font-family:SEGOEUIL, Arial,Helvetica,Sans-serif;}
+#header h1{color:#fff;text-shadow:0px 1px 0px #000;margin:0 5px 0;padding:0px 0px 0px 0px;font-family:&#39;Oswald&#39;,'Muli', Arial,Helvetica,Sans-serif;font-weight:bold;font-size:32px;line-height:32px;}
+#header .description{padding-left:7px;color:#fff;text-shadow:0px 1px 0px #000;line-height:14px;font-size:14px;padding-top:0px;margin-top:10px;font-family:'Muli', Arial,Helvetica,Sans-serif;}
 #header h1 a,#header h1 a:visited{color:#fff;text-decoration:none}
 #header h2{padding-left:5px;color:#fff;font:14px Arial,Helvetica,Sans-serif}
 #header2{float:right;width:51%;margin-right:0px;padding-right:0px;overflow:hidden;}
@@ -106,7 +106,7 @@ a img{border-width:0}
 #top-social-profiles .widget-container{background:none;padding:0;border:0}
 /* Outer-Wrapper----------------------------------------------- */
 #outer-wrapper{width:1024px;margin:0px auto 0px;padding:0px;text-align:left;}
-#content-wrapper{}
+#content-wrapper{position:relative}
 #main-wrapper{  float: left;    margin: 0;    overflow: hidden;    padding: 1px;
 width: 730px;    word-wrap: break-word;}
 #rsidebar-wrapper{background-color: #fff;
@@ -115,7 +115,7 @@ margin: 0;
 overflow: hidden;
 padding: 10px 0px;
 box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-width: 257px;
+width: 262px;
 word-wrap: break-word;}
 /* Headings----------------------------------------------- */
 h2{}
@@ -123,10 +123,10 @@ h2{}
 h2.date-header{margin:1.5em 0 .5em;display:none;}
 .wrapfullpost{}
 .post{background-color: #FFFFFF; margin-bottom: 15px; padding: 10px; }
-.post-title{color:#000;margin:0 0 10px 0;padding:0;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif;font-size:25px;line-height:24px; font-weight: bold; letter-spacing: -1px;}
+.post-title{color:#000;margin:0 0 10px 0;padding:0;font-family: 'Muli', Arial, Helvetica, Sans-serif;font-size:25px;line-height:24px; font-weight: bold; letter-spacing: -1px;}
 .post-title a,.post-title a:visited,.post-title strong{display:block;text-decoration:none;color:#000;text-decoration:none;}
 .post-title strong,.post-title a:hover{color:#26B5EF;text-decoration:none;}
-.post-body{margin:0px;padding:0px 10px 0px 0px;font-family: SEGOEUIL, Arial, Helvetica, Sans-serif;font-size:12px;line-height: 20px;}
+.post-body{margin:0px;padding:0px 10px 0px 0px;font-family: 'Muli', Arial, Helvetica, Sans-serif;font-size:12px;line-height: 20px;}
 .post-footer{margin:5px 0;}
 .comment-link{margin-$startSide:.6em}
 .post-body img{padding:6px;border:1px solid #eee;background:#ffffff;}
@@ -203,7 +203,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
 .sidebar{margin:0 0 10px 0;font-size:13px;color:#0C5B8F;}
 .sidebar a{text-decoration:none;color:#0C5B8F;}
 .sidebar a:hover{text-decoration:none;color:#23ACE0;}
-.sidebar h2{background-color: #CCCCCC;margin:0 0 10px 0;padding:9px 0 9px 10px;color:#056DB2;font-size:12px;line-height:7px;font-family:SEGOEUIL, Arial,Helvetica,Sans-serif;font-weight:bold;text-decoration:none;text-transform:uppercase;} 
+.sidebar h2{background-color: #CCCCCC;margin:0 0 10px 0;padding:9px 0 9px 10px;color:#056DB2;font-size:12px;line-height:7px;font-family:'Muli', Arial,Helvetica,Sans-serif;font-weight:bold;text-decoration:none;text-transform:uppercase;} 
 .sidebar ul{list-style-type:none;list-style:none;margin:0px;padding:0px;}
 .sidebar ul li{padding:0 0 9px 12px;margin:0 0 8px 0;background:url(http://3.bp.blogspot.com/-Caco7fhHUFA/T2w7Re1SVlI/AAAAAAAAEVU/NMex7G4CR7k/s1600/widget-list.png) left 4px no-repeat;border-bottom:1px dotted #48BFEA;}
 .sidebar .widget{margin:0 0 15px 0;padding:0;color:#0C5B8F;font-size:13px;}
@@ -553,8 +553,8 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
           var p = jQuery(window).scrollTop();
            console.log(p);
           // alert(start)
-          jQuery(sideRapper).css('position',((p)>siderapperstart) ? 'fixed' : 'static');
-          jQuery(sideRapper).css({'top':((p)>siderapperstart) ? '0px' : '', 'right':'104px'});
+          jQuery(sideRapper).css('position',((p)>siderapperstart) ? 'absolute' : 'static');
+          jQuery(sideRapper).css({'top':((p)>siderapperstart) ? '0px' : '', 'right':'0px'});
 
           jQuery(div1).css('position',((p)>start) ? 'fixed' : 'static');
           jQuery(div1).css('top',((p)>start) ? '0px' : '');
@@ -653,11 +653,11 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', end
       pre{margin:20px 0;white-space:pre}
       pre,code,tt{font:13px &#39;andale mono&#39;,&#39;lucida console&#39;,monospace;line-height:18px}
       #search {overflow:hidden;}
-      #header h1{font-family:SEGOEUIL,Arial,Helvetica,Sans-serif;}
+      #header h1{font-family:&#39;Muli&#39;,Arial,Helvetica,Sans-serif;}
       #header .description{font-family:Arial,Helvetica,Sans-serif;}
-      .post-title {font-family:SEGOEUIL, Arial, Helvetica, Sans-serif !important;}
+      .post-title {font-family:&#39;Muli&#39;, Arial, Helvetica, Sans-serif !important;}
       .sidebar h2{font-family:Arial,Helvetica,Sans-serif;}
-      #footer-widgets .widgettitle{font-family:SEGOEUIL,sans-serif}
+      #footer-widgets .widgettitle{font-family:&#39;Muli&#39;,sans-serif}
       .menus,.menus *{margin:0;padding:0;list-style:none;list-style-type:none;line-height:1.0}
       .menus ul{position:absolute;top:-999em;width:100%}
       .menus ul li{width:100%}
@@ -780,6 +780,34 @@ word-wrap: break-word;
         text-decoration: none;
         font-size: 16px;
       }
+ .status-msg-wrap {
+font-size: 9px;
+width: 99%;
+margin: 10px auto;
+position: relative;
+color: #E4E2E2;
+line-height: 25px;
+}
+      .status-msg-body b {
+text-transform: uppercase;
+font-size: 23px !important;
+color: #F60 !important;
+}
+        #facebookLike{
+            background-image:url('http://webcodehelpers.com/supportRepo/webcodehelpers.png');
+            background-repeat: no-repeat;
+            position: fixed;
+            bottom: 0px;
+            width: 185px;
+            height: 207px;
+          }
+        .likePlaceholder{
+            margin: 0px auto;
+            width: 181px;
+            position: absolute;
+            bottom: 60px;
+            right: -70px;
+          }
     </style>
     <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
       <style type='text/css'>
@@ -826,7 +854,7 @@ SyntaxHighlighter.all();
     <!--SYNTAX HIGHLIGHTER ENDS-->
   </head>
   <body>
-    <div id="fb-root">
+    <div id='fb-root'>
 </div>
 <script>
  //<![CDATA[
@@ -852,10 +880,10 @@ SyntaxHighlighter.all();
     <!-- AddThis Button END -->
     <div id='body-wrapper'>
       <!-- Header Part Start-->
-      <div id='headPart' style='width:100%; background-color:#1e8cbe; height:59px'>
+      <div id='headPart' style='width:100%; background-color:#1e8cbe; height:63px'>
         <div style='margin:0px auto;width:1024px'>
           <!-- Logo Start here -->
-          <div style='float:left; padding:10px;'>
+          <div style='float:left;'>
             <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
               <b:widget id='Header1' locked='true' title='Web CodeHelpers (Header)' type='Header'>
                 <b:includable id='main'>
@@ -915,6 +943,9 @@ user is not using shrink to fit then we expand the header.
             </b:section>
           </div>
           <!-- Logo Ends Here -->
+          <div class="facebookLikeShare" style='float:left; padding:19px;'>
+              <div class="fb-like" data-href="https://www.facebook.com/webcodehelpers" data-width="450" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+          </div>
           <!-- Social BookMark Start-->
           <div id='sb' style='float:right; padding:10px;'>
             <a href='http://twitter.com/#!/codehelper4all' target='_blank'>
@@ -1101,6 +1132,8 @@ Ads Area Ends here -->
                             text-decoration: none;
                             font-size: 16px;
                           }
+
+                          
                         </style>
                         <!-- navigation -->
                         <b:include name='nextprev'/>
@@ -2292,24 +2325,16 @@ Ads Area Ends here -->
               <div>
                 <ul class='subProLinks'>
                   <li>
-                    <a href='http://html5.webcodehelpers.com/' target='_blank'>
-                      HTML Interview Questions
-                    </a>
+                    <a href='http://uieiq.webcodehelpers.com/search/label/html%20interview%20questions' target='_blank'>HTML5 Interview Questions</a>
                   </li>
                   <li>
-                    <a href='http://css3.webcodehelpers.com/' target='_blank'>
-                      CSS Interview Questions
-                    </a>
+                    <a href='http://uieiq.webcodehelpers.com/search/label/css%20interview%20questions' target='_blank'>CSS3 Interview Questions</a>
                   </li>
                   <li>
-                    <a href='http://javascript.webcodehelpers.com/' target='_blank'>
-                      Javascript Interview Questions
-                    </a>
+                    <a href='http://uieiq.webcodehelpers.com/search/label/javascript%20interview%20questions' target='_blank'>Javascript Interview Questions</a>
                   </li>
                   <li>
-                    <a href='http://jquery.webcodehelpers.com/' target='_blank'>
-                      JQuery Interview Questions
-                    </a>
+                    <a href='http://uieiq.webcodehelpers.com/search/label/jquery%20interview%20questions' target='_blank'>JQuery Interview Questions</a>
                   </li>
                 </ul>
               </div>
@@ -2327,6 +2352,14 @@ Ads Area Ends here -->
               <div class='widget-container'>
                 
               </div>
+             <!--  <div id="logoBottom" style="width: 260px; margin: 0px auto; padding-left: 35px;">
+                  <div id='facebookLike'>
+                      <div class='likePlaceholder'>
+                          <div class='fb-like' data-href='http://www.facebook.com/webcodehelpers' data-layout='box_count' data-show-faces='true' data-width='150'/>
+                        </div>
+                    </div>
+
+              </div> -->
               <div style='height:5px;clear:both;'/>
               <b:section class='sidebar' id='sidebarright' preferred='yes'/>
               <p/>
